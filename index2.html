@@ -5,41 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Curriculum" content="Curriculum Vitae, Desarrollo del software, Software, aplicaciones">
     <title>Curriculum Vitae</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            font-size: 20px;
-        }
-        header{
-            background-color: navy;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header img{
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-        h1{
-            margin:10px 0;
-        }
-        .informacion{
-            margin:5px;
-            padding:10px;
-        }
-        a{
-            color:white;
-        }
-        a:hover{
-            color:white;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icono1.png" type="image/x-icon">
 </head>
 <body>
+    <div class="navbar">
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia Laboral</a>
+        <a href="#educacion">Educación</a>
+        <a href="#cursos">Cursos</a>
+    </div>
     <header>
         <img src="./fotoMia.jpg" alt="Mi Foto">
         <h1>Eduardo Hernandez Contreras</h1>
@@ -47,7 +22,7 @@
         <p>Dirección: 200 metros este Pizzeria La Estacion</p>
         <p>Teléfono: 8888888</p>
     </header>
-    <section class="informacion">
+    <section id="perfil" class="informacion">
         <h2>Pefil</h2>
         <p>Estudiante de Ingeniería de Software con experiencia de nivel inicial especializada en software 
             desarrollo, gestión de bases de datos, C#, Python, JavaScript y SQL Server 
@@ -55,15 +30,15 @@
             para clientes empresariales. 
         </p>
     </section>
-
-    <section class="informacion">
+    
+    <section id="experiencia" class="informacion">
         <h2>Experiencia Laboral</h2>
-        <p>Interno,AMDERE,Alajuela</p>
+        <p>Interno, AMDERE, Alajuela</p>
         <p style="font-size: 0.9em; margin-top: 0.1em;">Septiembre 2020 - Noviembre 2020</p>
     </section>
-
-    <section class="informacion">
-        <h2>Eduacion</h2>
+    
+    <section id="educacion" class="informacion">
+        <h2>Educación</h2>
         <ul>
             <li>
                 <p>Colegio, CTP Jesús Ocaña Rojas, Alajuela</p>
@@ -79,7 +54,8 @@
             </li>
         </ul>
     </section>
-    <section class="informacion">
+    
+    <section id="cursos" class="informacion">
         <h2>Cursos</h2>
         <table border="1">
             <tr>
@@ -88,23 +64,25 @@
                 <th>Fecha</th>
             </tr>
             <tr>
-                <td style="text-align: center;">English Course</td>
-                <td style="text-align: center;">Center for Teacher Development</td>
-                <td style="text-align: center;">JUNIO 2018 — AGOSTO 2019</td>
+                <td>English Course</td>
+                <td>Center for Teacher Development</td>
+                <td>JUNIO 2018 — AGOSTO 2019</td>
             </tr>
             <tr>
-                <td style="text-align: center;">Introduction to Packet Tracer</td>
-                <td style="text-align: center;">Cisco</td>
-                <td style="text-align: center;">AGOSTO 2022 — AGOSTO 2022</td>
+                <td>Introduction to Packet Tracer</td>
+                <td>Cisco</td>
+                <td>AGOSTO 2022 — AGOSTO 2022</td>
             </tr>
             <tr>
-                <td style="text-align: center;">Programming Essentials In Python</td>
-                <td style="text-align: center;">Cisco</td>
-                <td style="text-align: center;">SEPTIEMBRE 2023 — SEPTIEMBRE 2023</td>
+                <td>Programming Essentials In Python</td>
+                <td>Cisco</td>
+                <td>SEPTIEMBRE 2023 — SEPTIEMBRE 2023</td>
             </tr>
         </table>
-
     </section>
-  
+    <footer>
+        <p>Derechos de Autor © 2023 - Eduardo Hernandez Contreras</p>
+        <div class="footer-square"></div>
+    </footer>
 </body>
 </html>
